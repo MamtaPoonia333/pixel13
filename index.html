@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel13 — Online Image Editor</title>
+    <meta name="application-name" content="Pixel13">
+    <meta name="author" content="koderc13 Studio">
+    <meta name="description" content="Pixel13 is a modern, browser-based image editor crafted by koderc13 Studio. Edit, rotate, and enhance images instantly.">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="Pixel13 — Online Image Editor">
+    <meta property="og:description" content="A fast, clean, browser-based image editor crafted by koderc13 Studio.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pixel13">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+</head>
+<body>
+    <div class="overlay">
+        <div class="loader">
+            <img class="logo-1" src="/favicon.png" alt="">
+            <img class="logo-2" src="/assets/icons/logo.png" alt="">
+            <div class="outer">
+                <div class="inner"></div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section>
+            <div class="left">
+                <div class="top">
+                    <label for="image-input" class="btn">
+                        Choose image
+                        <input type="file" id="image-input" accept="image/*" hidden>
+                    </label>
+                    <button class="btn" id="reset-btn" >Reset</button>
+                    <button class="btn" id="dawnload-btn">Dawnload</button>
+                    <button class="rotate-btn"><i class="ri-clockwise-2-line"></i></button>
+                </div>
+                <div class="bottom">
+                    <div class="placeholder">
+                        <i class="ri-image-fill"></i>
+                        <p>No image Chosen</p>
+                    </div>
+                    <canvas id="image-canvas"></canvas>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Filters</h2>
+                <div class="filters">
+                </div>
+                <h2>Presets</h2>
+                <div class="presets">
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            © 2025 Pixel13 — Crafted by chetan 
+        </footer>          
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
